@@ -1,0 +1,44 @@
+.container {
+	margin-left: 1em;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	font-family: helvetica, sans-serif;
+	width: 5em;
+	margin-top: 2em;
+	background-color: black;
+	color: white;
+	padding: 0.5em;
+	text-align: center;
+}
+
+#query {
+	padding : 5px 10px;
+	width: 19.5em;
+	float:left;
+	margin-top: -3em;
+	font-family: helvetica, sans-serif;
+	outline: none; /*-- removes the ugly blue glow effect--*/
+	text-align: center;
+}
+
+#button {
+	border : solid 0px #ffffff;
+	font-size : 15px;
+	color : white;
+	padding : 5px 10px;
+	background-color : black;
+	width: 16em;
+	font-weight: bold;
+	font-family: helvetica, sans-serif;
+	letter-spacing: 0.25em;
+}
+
+#button:hover{
+	background-color: #FF0000;
+	outline: none; /*-- removes the ugly blue glow effect--*/
+	cursor: pointer; /*-- shows a hand pointing--*/
+	color: black;
+}
