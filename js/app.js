@@ -9,7 +9,7 @@ $(function(){
 // To get request
 function getRequest(searchTerm){
   var params = { 
-    q: searchTerm,
+    q: searchTerm, // the key "q" would be used for youtube api's
     r: 'json',
     part:'snippet',
     key: 'AIzaSyBLO_74kbdhUfBOFDlKDEdCGKOlfd71dww'
