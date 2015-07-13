@@ -8,8 +8,8 @@ $(function(){
 
 // To get request
 function getRequest(searchTerm){
-  var params = {
-    s: searchTerm,
+  var params = { 
+    q: searchTerm,
     r: 'json',
     part:'snippet',
     key: 'AIzaSyBLO_74kbdhUfBOFDlKDEdCGKOlfd71dww'
