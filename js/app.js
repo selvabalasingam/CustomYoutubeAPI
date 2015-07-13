@@ -23,13 +23,14 @@ function getRequest(searchTerm){
 
 // To show results
 function showResults(results){
-   var html = "";
-   $.each(results, function(index,value,item){
-       var title = value.snippet.title
-       var thumbnail = value.snippet.thumbnails.high.url; // high stands for "A high resolution version of the thumbnail image. "
-       var vidID = item.id.videoID;
-       html += "<li><p>" + title + "</p><a href='https://www.youtube.com/watch?v=" + vidID + "'><img src='" +  thumbnail + "'/></a></li>" ;
-       console.log(results);
+    var html = "";
+    $.each(results, function(index,value){
+      console.log(value);
+      var title = value.snippet.title
+      var thumbnail = value.snippet.thumbnails.high.url; // high stands for "A high resolution version of the thumbnail image. "
+      var vidID = value.id.videoID;
+      html += "<li><p>" + title + "</p><a href='https://www.youtube.com/watch?v=" + vidID + "'><img src='" +  thumbnail + "'/></a></li>" ;
+      console.log(results);
    });
    $('#search-results ul').html(html);
    }
