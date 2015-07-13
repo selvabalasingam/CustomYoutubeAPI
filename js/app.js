@@ -25,13 +25,12 @@ function getRequest(searchTerm){
 function showResults(results){
    var html = "";
    $.each(results, function(index,value,item){
-       var title = item.snippet.title
-       var thumbnail = item.snippet.thumbnails.high.url; // high stands for "A high resolution version of the thumbnail image. "
+       var title = value.snippet.title
+       var thumbnail = value.snippet.thumbnails.high.url; // high stands for "A high resolution version of the thumbnail image. "
        var vidID = item.id.videoID;
        html += "<li><p>" + title + "</p><a href='https://www.youtube.com/watch?v=" + vidID + "'><img src='" +  thumbnail + "'/></a></li>" ;
        console.log(results);
    });
    $('#search-results ul').html(html);
    }
-   showResults(results);
 });
