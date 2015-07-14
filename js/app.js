@@ -28,8 +28,8 @@ function showResults(results){
       console.log(value);
       var title = value.snippet.title
       var thumbnail = value.snippet.thumbnails.high.url; // high stands for "A high resolution version of the thumbnail image. "
-      var vidID = value.id.videoID;
-      html += "<li><p>" + title + "</p><a href='https://www.youtube.com/watch?v=" + vidID + "'><img src='" +  thumbnail + "'/></a></li>" ;
+      var vidID = value.id.videoId; 
+      html += "<li><p>" + title + '</p><iframe width="420" height="315" src="https://www.youtube.com/embed/'+ vidID +'" frameborder="0" allowfullscreen></iframe></li>' ;
       console.log(results);
    });
    $('#search-results ul').html(html);
