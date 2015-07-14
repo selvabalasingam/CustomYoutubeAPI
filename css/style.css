@@ -43,3 +43,10 @@ h3 {
 	cursor: pointer; /*-- shows a hand pointing--*/
 	color: black;
 }
+
+ul {
+	list-style-type: none; /*-- this removes the ugly bullets --*/
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: helvetica, sans-serif;
+}
